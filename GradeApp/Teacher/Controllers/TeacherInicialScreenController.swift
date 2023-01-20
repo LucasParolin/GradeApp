@@ -21,8 +21,8 @@ class TeacherInicialScreenController: UIViewController {
     }
     
     @objc func navigateToCalculateAvarageGrade() {
-                let calculateAvarageGradeControllerCustom = CalculateAvarageGradeController()
-                self.navigationController?.pushViewController(calculateAvarageGradeControllerCustom, animated: true)
+        let calculateAvarageGradeControllerCustom = CalculateAvarageGradeController()
+        self.navigationController?.pushViewController(calculateAvarageGradeControllerCustom, animated: true)
     }
     
 }

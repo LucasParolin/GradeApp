@@ -31,6 +31,7 @@ class StudentLoginScreen: UIView {
         textField.layer.cornerRadius = 5
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.80).cgColor
+        textField.textColor = .white
         return textField
     }()
     
@@ -45,6 +46,7 @@ class StudentLoginScreen: UIView {
         textField.isSecureTextEntry = true
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.80).cgColor
+        textField.textColor = .white
         return textField
     }()
     

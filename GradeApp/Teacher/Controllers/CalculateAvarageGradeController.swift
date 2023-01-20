@@ -18,7 +18,7 @@ class CalculateAvarageGradeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         calculateAvarageGradeViewCustom.selectStudent.delegate = self
-       
+        
     }
     
     @objc func myTargetFunction() {

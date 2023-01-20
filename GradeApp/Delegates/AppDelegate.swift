@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let navigationView =  UINavigationController(rootViewController: InicialScreenController())
+        let navigationView =  UINavigationController(rootViewController: CalculateAvarageGradeController())
         navigationView.navigationBar.tintColor = .black
         
         window = UIWindow(frame: UIScreen.main.bounds)

@@ -19,12 +19,13 @@ class CalculateAvarageGradeView:UIView {
         let textField = UITextField()
         textField.backgroundColor = UIColor(red: 0.18, green: 0.25, blue: 0.35, alpha: 1.00)
         textField.attributedPlaceholder = NSAttributedString(
-            string: "  Clique para selecionar o aluno",
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.60)])
+            string: "        Clique para selecionar o aluno",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 1.00)])
         textField.layer.masksToBounds = true
         textField.layer.cornerRadius = 5
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.80).cgColor
+        textField.textColor = .white
         return textField
     }()
     
@@ -38,6 +39,7 @@ class CalculateAvarageGradeView:UIView {
         textField.layer.cornerRadius = 5
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.80).cgColor
+        textField.textColor = .white
         return textField
     }()
         
@@ -51,6 +53,7 @@ class CalculateAvarageGradeView:UIView {
         textField.layer.cornerRadius = 5
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.80).cgColor
+        textField.textColor = .white
         return textField
     }()
         
@@ -64,6 +67,7 @@ class CalculateAvarageGradeView:UIView {
         textField.layer.cornerRadius = 5
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.80).cgColor
+        textField.textColor = .white
         return textField
     }()
     
@@ -77,6 +81,7 @@ class CalculateAvarageGradeView:UIView {
         textField.layer.cornerRadius = 5
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.80).cgColor
+        textField.textColor = .white
         return textField
     }()
     
@@ -113,8 +118,8 @@ class CalculateAvarageGradeView:UIView {
             leading: nil,
             bottom: nil,
             trailing: nil,
-            padding: .init(top: 300, left: 0, bottom: 0, right: 0),
-            size: .init(width: 300, height: 60))
+            padding: .init(top: 0, left: 0, bottom: 0, right: 0),
+            size: .init(width: 300, height: 45))
         selectStudent.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         
         firstStudentGradeTextField.anchor(
