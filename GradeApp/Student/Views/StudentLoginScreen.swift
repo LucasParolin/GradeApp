@@ -25,13 +25,15 @@ class StudentLoginScreen: UIView {
         let textField = UITextField()
         textField.backgroundColor = UIColor(red: 0.18, green: 0.25, blue: 0.35, alpha: 1.00)
         textField.attributedPlaceholder = NSAttributedString(
-            string: "  Insira seu nome de usuário",
+            string: "Insira seu nome de usuário",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.60)])
         textField.layer.masksToBounds = true
         textField.layer.cornerRadius = 5
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.80).cgColor
         textField.textColor = .white
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: textField.frame.height))
+        textField.leftViewMode = .always
         return textField
     }()
     
@@ -39,7 +41,7 @@ class StudentLoginScreen: UIView {
         let textField = UITextField()
         textField.backgroundColor = UIColor(red: 0.18, green: 0.25, blue: 0.35, alpha: 1.00)
         textField.attributedPlaceholder = NSAttributedString(
-            string: "  Insira seu nome de usuário",
+            string: "Insira seu nome de usuário",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.60)])
         textField.layer.masksToBounds = true
         textField.layer.cornerRadius = 5
@@ -47,6 +49,8 @@ class StudentLoginScreen: UIView {
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.80).cgColor
         textField.textColor = .white
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: textField.frame.height))
+        textField.leftViewMode = .always
         return textField
     }()
     

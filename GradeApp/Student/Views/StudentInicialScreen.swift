@@ -1,5 +1,5 @@
 //
-//  InicialScreen.swift
+//  StudentInicialScreen.swift
 //  GradeApp
 //
 //  Created by Lucas Parolin on 13/01/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SeeMyGrades: UIView{
+class StudentInicialScreen: UIView{
     
     lazy var background: UIView = {
         let background = UIView()
@@ -79,3 +79,6 @@ class SeeMyGrades: UIView{
         
     }
 }
+
+
+//Multiple_commands_produce'/Users/lucasparolin/Library/Developer/Xcode/DerivedData/GradeApp-gwcextrtvujigpcvzmarlfsuddql/Build/Intermediates.noindex/GradeApp.build/Debug-iphonesimulator/GradeApp.build/Objects-normal/x86_64/StudentInicialScreen.stringsdata'

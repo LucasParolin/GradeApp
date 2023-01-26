@@ -18,11 +18,17 @@ class TeacherInicialScreenController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         teacherInicialScreenCustom.calculateAvarageGrade.addTarget(self, action: #selector(navigateToCalculateAvarageGrade), for: .touchUpInside)
+        teacherInicialScreenCustom.seeAvarageStudentsGrades.addTarget(self, action: #selector(navigateToSeeAverageGrades), for: .touchUpInside)
     }
     
     @objc func navigateToCalculateAvarageGrade() {
         let calculateAvarageGradeControllerCustom = CalculateAvarageGradeController()
         self.navigationController?.pushViewController(calculateAvarageGradeControllerCustom, animated: true)
     }
+    @objc func navigateToSeeAverageGrades(){
+        let averageGradeDetailsViewController = AverageGradeDetailsViewController()
+        present(averageGradeDetailsViewController, animated: true)
+    }
+    
     
 }

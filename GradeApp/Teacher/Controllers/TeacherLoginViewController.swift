@@ -53,6 +53,6 @@ class TeacherLoginViewController: UITableViewController {
         
         let teacherInicialScreenCustom = TeacherInicialScreenController()
         self.navigationController?.pushViewController(teacherInicialScreenCustom, animated: true)
-        
+
     }
 }

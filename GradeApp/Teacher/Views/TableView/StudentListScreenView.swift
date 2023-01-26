@@ -41,7 +41,7 @@ class StudentListScreenView: UIView {
     }
     
     func setConstraints() {
-                backgroundContainer.anchor(top: safeAreaLayoutGuide.topAnchor, leading: safeAreaLayoutGuide.leadingAnchor, bottom: safeAreaLayoutGuide.bottomAnchor, trailing: safeAreaLayoutGuide.trailingAnchor, padding: .init(top: 30, left: 20, bottom: 80, right: 20), size: .init(width: 300, height: 400))
+        backgroundContainer.anchor(top: safeAreaLayoutGuide.topAnchor, leading: safeAreaLayoutGuide.leadingAnchor, bottom: safeAreaLayoutGuide.bottomAnchor, trailing: safeAreaLayoutGuide.trailingAnchor, padding: .init(top: 30, left: 20, bottom: 80, right: 20), size: .init(width: 300, height: 400))
         
         tableView.anchor(top: backgroundContainer.topAnchor, leading: backgroundContainer.leadingAnchor, bottom: backgroundContainer.bottomAnchor, trailing: backgroundContainer.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: bounds.width, height: bounds.height))
         

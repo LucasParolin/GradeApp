@@ -10,7 +10,7 @@ import UIKit
 class StudentLoginController: UIViewController {
     
     let studentLoginScreenCustom = StudentLoginScreen()
-    let inicialScreenCustom = SeeMyGrades()
+    let inicialScreenCustom = StudentInicialScreen()
     private var loginViewModel = LoginRepositoryMock.shared
 
     override func loadView() {
@@ -30,7 +30,7 @@ class StudentLoginController: UIViewController {
                 if self?.studentLoginScreenCustom.userTextField.text == login.user
                     && self?.studentLoginScreenCustom.passwordTextField.text == login.password {
                     
-                    self?.navigateToSeeMyGrades()
+                    self?.navigateToStudentInicialScreen()
                 }else {
                     
                     let alertController = UIAlertController(title: "Erro", message: "Usuário ou senha incorretos", preferredStyle: .alert)
@@ -44,10 +44,12 @@ class StudentLoginController: UIViewController {
         }
     }
     
-    @objc func navigateToSeeMyGrades() {
+    @objc func navigateToStudentInicialScreen() {
         
-        let seeMyGradesControllerCustom = SeeMyGradesController()
+        let seeMyGradesControllerCustom = StudentInicialScreenController()
         self.navigationController?.pushViewController(seeMyGradesControllerCustom, animated: true)
         
     }
 }
+
+

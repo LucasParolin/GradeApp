@@ -1,20 +1,18 @@
 //
-//  ListStudentsViewController.swift
+//  ListSubjectViewController.swift
 //  GradeApp
 //
-//  Created by Lucas Parolin on 17/01/23.
+//  Created by Lucas Parolin on 23/01/23.
 //
 
 import UIKit
 
-class ListStudentsViewController: UIViewController {
-    var getStudent: (Students) -> Void = {_ in}
+class ListSubjectViewController: UIViewController {
+    var getSubject: (Subject) -> Void = {_ in}
     
-    var students: [Students] = []
-    typealias CustomView = StudentListScreenView
+    var subject: [Subject] = []
+    typealias CustomView = SubjectListScreenView
     var customView = CustomView()
-    
-    var student: Students?
     
     override func loadView() {
         view = customView
@@ -29,21 +27,21 @@ class ListStudentsViewController: UIViewController {
     }
     
     func populateStudentList() {
-        StudentRepositoryMock.shared.getStudent { student in
-            self.students = student
+        SubjectRepositoryMock.shared.getStudent { subjects in
+            self.subject = subjects
         }
     }
 }
-extension ListStudentsViewController: UITableViewDelegate, UITableViewDataSource {
+extension ListSubjectViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return students.count
+        return subject.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: customView.cellId, for: indexPath) as! StudentTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: customView.cellId, for: indexPath) as! SubjectTableViewCell
         
-        cell.student = students[indexPath.item]
+        cell.subjects = subject[indexPath.item]
         return cell
     }
     
@@ -52,7 +50,7 @@ extension ListStudentsViewController: UITableViewDelegate, UITableViewDataSource
         print(indexPath.row)
         print(indexPath.section)
         
-        getStudent(students[indexPath.item])
+        getSubject(subject[indexPath.item])
+
     }
 }
-
