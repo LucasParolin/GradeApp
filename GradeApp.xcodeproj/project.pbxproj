@@ -39,6 +39,8 @@
 		FFEC92062982ADF300B314E4 /* StudentListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C44E12976DCFE0026EABD /* StudentListScreenView.swift */; };
 		FFEC92082982C46700B314E4 /* StudentGradesFinalDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC92072982C46700B314E4 /* StudentGradesFinalDetailsView.swift */; };
 		FFEC920A2982C6CD00B314E4 /* StudentGradesFinalDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC92092982C6CD00B314E4 /* StudentGradesFinalDetailsController.swift */; };
+		FFEC920C2982E13100B314E4 /* StudentGradesFinalDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC920B2982E13100B314E4 /* StudentGradesFinalDetails.swift */; };
+		FFEC920E298300AE00B314E4 /* StudentGradesFinalDetailsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC920D298300AE00B314E4 /* StudentGradesFinalDetailsRepositoryMock.swift */; };
 		FFF0DA212978294600DC5E1A /* LoginRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF0DA202978294600DC5E1A /* LoginRepositoryMock.swift */; };
 		FFF0DA23297829A000DC5E1A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF0DA22297829A000DC5E1A /* Login.swift */; };
 		FFF0DA5F297868BB00DC5E1A /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF0DA5E297868BA00DC5E1A /* StudentTableViewCell.swift */; };
@@ -81,6 +83,8 @@
 		FFE9A21F2976D18300FE1F64 /* CalculateAvarageGradeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateAvarageGradeController.swift; sourceTree = "<group>"; };
 		FFEC92072982C46700B314E4 /* StudentGradesFinalDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentGradesFinalDetailsView.swift; sourceTree = "<group>"; };
 		FFEC92092982C6CD00B314E4 /* StudentGradesFinalDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentGradesFinalDetailsController.swift; sourceTree = "<group>"; };
+		FFEC920B2982E13100B314E4 /* StudentGradesFinalDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentGradesFinalDetails.swift; sourceTree = "<group>"; };
+		FFEC920D298300AE00B314E4 /* StudentGradesFinalDetailsRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentGradesFinalDetailsRepositoryMock.swift; sourceTree = "<group>"; };
 		FFF0DA202978294600DC5E1A /* LoginRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryMock.swift; sourceTree = "<group>"; };
 		FFF0DA22297829A000DC5E1A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		FFF0DA5E297868BA00DC5E1A /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 				FFE66C24297EC67700A56720 /* StudentsRepositoryMock.swift */,
 				FFE66C2F297EF47800A56720 /* SubjectRepositoryMock.swift */,
 				FF8FC08629817538008E1B69 /* AverageGradeDetailsRepositoryMock.swift */,
+				FFEC920D298300AE00B314E4 /* StudentGradesFinalDetailsRepositoryMock.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 				FFE66C22297EB42C00A56720 /* Students.swift */,
 				FFE66C2D297EF3F500A56720 /* Subject.swift */,
 				FF8FC08429815CC7008E1B69 /* AvarageGradeDetails.swift */,
+				FFEC920B2982E13100B314E4 /* StudentGradesFinalDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -373,6 +379,7 @@
 				FFE66C2E297EF3F500A56720 /* Subject.swift in Sources */,
 				FF9C44E02976DC110026EABD /* ListStudentsViewController.swift in Sources */,
 				FF8FC07D2981594B008E1B69 /* AverageGradeDetailsTableViewCell.swift in Sources */,
+				FFEC920C2982E13100B314E4 /* StudentGradesFinalDetails.swift in Sources */,
 				FFE9A2202976D18300FE1F64 /* CalculateAvarageGradeController.swift in Sources */,
 				FFE924AF29757BFC00EF16BA /* InicialScreenController.swift in Sources */,
 				FF8FC08329815A24008E1B69 /* AverageGradeDetailsViewController.swift in Sources */,
@@ -380,6 +387,7 @@
 				FFE924B72975BFFE00EF16BA /* TeacherInicialScreenController.swift in Sources */,
 				FFF0DA5F297868BB00DC5E1A /* StudentTableViewCell.swift in Sources */,
 				FFE924B129758E3B00EF16BA /* StudentLoginScreen.swift in Sources */,
+				FFEC920E298300AE00B314E4 /* StudentGradesFinalDetailsRepositoryMock.swift in Sources */,
 				FFF0DA23297829A000DC5E1A /* Login.swift in Sources */,
 				FFE66C23297EB42C00A56720 /* Students.swift in Sources */,
 				FF10978529719DC000B6C81B /* StudentInicialScreen.swift in Sources */,

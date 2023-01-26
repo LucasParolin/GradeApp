@@ -27,7 +27,7 @@ class CalculateAvarageGradeController: UIViewController {
         
         let average = AvarageGradeDetails(
             student: "- " + (calculateAvarageGradeViewCustom.selectStudent.text ?? ""),
-            subject: "- " + (calculateAvarageGradeViewCustom.selectSubject.text ?? ""),
+            subject: "- " + (calculateAvarageGradeViewCustom.selectSubject.text ?? ""), firstGrade: calculateAvarageGradeViewCustom.firstStudentGradeTextField.text ?? "", secondGrade: calculateAvarageGradeViewCustom.secondStudentGradeTextField.text ?? "", thirdGrade: calculateAvarageGradeViewCustom.thirdStudentGradeTextField.text ?? "", fourthGrade: calculateAvarageGradeViewCustom.fourthStudentGradeTextField.text ?? "",
             averageGrade: "Média de \(calculateAverage())"
         )
         
@@ -36,14 +36,14 @@ class CalculateAvarageGradeController: UIViewController {
         averageGradeDetailsViewControllerCustom.getData(name: calculateAvarageGradeViewCustom.selectStudent.text ?? "", subject: calculateAvarageGradeViewCustom.selectSubject.text ?? "", average: calculateAverage())
         
         averageGradeDetailsViewControllerCustom.close = {
-//            self.calculateAvarageGradeViewCustom.selectStudent.text = ""
-//            self.calculateAvarageGradeViewCustom.selectSubject.text = ""
-//            self.calculateAvarageGradeViewCustom.firstStudentGradeTextField.text = ""
-//            self.calculateAvarageGradeViewCustom.secondStudentGradeTextField.text = ""
-//            self.calculateAvarageGradeViewCustom.thirdStudentGradeTextField.text = ""
-//            self.calculateAvarageGradeViewCustom.fourthStudentGradeTextField.text = ""
+            //            self.calculateAvarageGradeViewCustom.selectStudent.text = ""
+            //            self.calculateAvarageGradeViewCustom.selectSubject.text = ""
+            //            self.calculateAvarageGradeViewCustom.firstStudentGradeTextField.text = ""
+            //            self.calculateAvarageGradeViewCustom.secondStudentGradeTextField.text = ""
+            //            self.calculateAvarageGradeViewCustom.thirdStudentGradeTextField.text = ""
+            //            self.calculateAvarageGradeViewCustom.fourthStudentGradeTextField.text = ""
             
-//            O de baixo faz a mesma coisa que o de cima, porém junta todos os itens em um array pra fazer a            mesma coisa com todos ao mesmo tempo
+            //            O de baixo faz a mesma coisa que o de cima, porém junta todos os itens em um array pra fazer a            mesma coisa com todos ao mesmo tempo
             [
                 self.calculateAvarageGradeViewCustom.selectStudent,
                 self.calculateAvarageGradeViewCustom.selectSubject,

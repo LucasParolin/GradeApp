@@ -46,7 +46,7 @@ class StudentGradesFinalDetailsView: UIView {
         label.layer.cornerRadius = 5
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
-        label.textAlignment = .center
+//        label.textAlignment = .center
         return label
     }()
     
@@ -58,7 +58,7 @@ class StudentGradesFinalDetailsView: UIView {
         label.layer.cornerRadius = 5
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
-        label.textAlignment = .center
+//        label.textAlignment = .center
         return label
     }()
     
@@ -70,7 +70,7 @@ class StudentGradesFinalDetailsView: UIView {
         label.layer.cornerRadius = 5
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
-        label.textAlignment = .center
+//        label.textAlignment = .center
         return label
     }()
     
@@ -82,7 +82,7 @@ class StudentGradesFinalDetailsView: UIView {
         label.layer.cornerRadius = 5
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
-        label.textAlignment = .center
+//        label.textAlignment = .center
         return label
     }()
     
@@ -94,7 +94,7 @@ class StudentGradesFinalDetailsView: UIView {
         label.layer.cornerRadius = 5
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
-        label.textAlignment = .center
+//        label.textAlignment = .center
         return label
     }()
     
@@ -106,7 +106,7 @@ class StudentGradesFinalDetailsView: UIView {
         label.layer.cornerRadius = 5
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
-        label.textAlignment = .center
+//        label.textAlignment = .center
         return label
     }()
     

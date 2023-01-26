@@ -8,9 +8,10 @@
 import UIKit
 
 class AverageGradeDetailsViewController: UIViewController {
-    var getAvarageGradeDetails: (AvarageGradeDetails) -> Void = {_ in}
     
+    var getAvarageGradeDetails: (AvarageGradeDetails) -> Void = {_ in}
     var close: () -> Void = {}
+    var average: Float?
     
     var avarageGradeDetails: [AvarageGradeDetails] = []
     typealias CustomView = AverageGradeDetailsScreenView
@@ -25,7 +26,6 @@ class AverageGradeDetailsViewController: UIViewController {
         super.viewDidLoad()
         customView.tableView.delegate = self
         customView.tableView.dataSource = self
-        
         customView.calculateAgain.addTarget(self, action: #selector(dismissScreen), for: .touchUpInside)
 
         populateStudentList()
@@ -46,9 +46,11 @@ class AverageGradeDetailsViewController: UIViewController {
     }
     
     func getData(name: String, subject: String, average: Float) {
-        averageGradeDetailsTableViewCellCustom.lblName.text = name
-        averageGradeDetailsTableViewCellCustom.lblSubject.text = subject
-        averageGradeDetailsTableViewCellCustom.lblAverageGrade.text = "Média do aluno: \(average)"
+        averageGradeDetailsTableViewCellCustom.avarageGradeDetails = AvarageGradeDetails(student: name, subject: subject, averageGrade: "Média do aluno: \(average)")
+        
+//        averageGradeDetailsTableViewCellCustom.lblName.text = name
+//        averageGradeDetailsTableViewCellCustom.lblSubject.text = subject
+//        averageGradeDetailsTableViewCellCustom.lblAverageGrade.text = "Média do aluno: \(average)"
     }
 }
 extension AverageGradeDetailsViewController: UITableViewDelegate, UITableViewDataSource {
@@ -66,12 +68,15 @@ extension AverageGradeDetailsViewController: UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let studentGradesFinalDetailsController = StudentGradesFinalDetailsController()
-        print(indexPath.item)
-        print(indexPath.row)
-        print(indexPath.section)
-        getAvarageGradeDetails(avarageGradeDetails[indexPath.item])
+        let average = avarageGradeDetails[indexPath.item]
+        
+        
+        studentGradesFinalDetailsController.getData(name: average.student ?? "", firstGrade: average.firstGrade ?? "", secondGrade: average.secondGrade ?? "", thirdGrade: average.thirdGrade ?? "", fourthGrade: average.fourthGrade ?? "", subject: average.subject ?? "", average: Float(average.averageGrade ?? "") ?? 1.0)
+        
         present(studentGradesFinalDetailsController, animated: true)
+        getAvarageGradeDetails(avarageGradeDetails[indexPath.item])
     }
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete){
             avarageGradeDetails.remove(at: indexPath.item)
