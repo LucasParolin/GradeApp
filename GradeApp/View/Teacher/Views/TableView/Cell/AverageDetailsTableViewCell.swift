@@ -9,7 +9,7 @@ import UIKit
 
 class AverageDetailsTableViewCell: BaseCell {
     
-    var avarageGradeDetails: AvarageDetails? {
+    var avarageGradeDetails: AverageDetails? {
         didSet {
             lblName.text = avarageGradeDetails?.student
             lblSubject.text = avarageGradeDetails?.subject

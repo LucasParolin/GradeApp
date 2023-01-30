@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct AvarageDetails {
+struct AverageDetails {
     var student: String?
     var subject: String?
     var firstGrade: String?

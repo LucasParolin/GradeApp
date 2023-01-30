@@ -15,10 +15,10 @@ class AverageDetailsViewController: UIViewController {
     // Variables
     var average: Float?
     var customView = CustomView()
-    var avarageGradeDetails: [AvarageDetails] = []
+    var avarageGradeDetails: [AverageDetails] = []
     
     // Action Variables
-    var getAvarageGradeDetails: (AvarageDetails) -> Void = {_ in}
+    var getAvarageGradeDetails: (AverageDetails) -> Void = {_ in}
     var close: () -> Void = {}
     
     // Constant
@@ -33,10 +33,10 @@ class AverageDetailsViewController: UIViewController {
         customView.tableView.delegate = self
         customView.tableView.dataSource = self
         customView.calculateAgain.addTarget(self, action: #selector(dismissScreen), for: .touchUpInside)
-
+        
         populateStudentList()
     }
-
+    
     
     @objc func dismissScreen() {
         close()
@@ -55,7 +55,7 @@ class AverageDetailsViewController: UIViewController {
     
     // Substituir por init
     func getData(name: String, subject: String, average: Float) {
-        averageDetailsTableViewCell.avarageGradeDetails = AvarageDetails(student: name, subject: subject, averageGrade: "Média do aluno: \(average)")
+        averageDetailsTableViewCell.avarageGradeDetails = AverageDetails(student: name, subject: subject, averageGrade: "Média do aluno: \(average)")
     }
 }
 
@@ -91,10 +91,24 @@ extension AverageDetailsViewController: UITableViewDelegate, UITableViewDataSour
             AverageDetailsRepositoryMock.shared.averages.remove(at: indexPath.item)
         }
     }
-
+    
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let action = UIContextualAction(style: .normal, title: "Editar") { _, _, _ in  //
+        let action = UIContextualAction(style: .normal, title: "Edit") { _, _, _ in  //
             // AQUI EDITA A CÉLULA
+            let editViewController = EditViewController()
+            
+            editViewController.details = self.avarageGradeDetails[indexPath.item]
+            
+            editViewController.update = { detail in
+                self.avarageGradeDetails[indexPath.item] = detail
+                AverageDetailsRepositoryMock.shared.averages[indexPath.item] = detail
+                
+                tableView.reloadData()
+                
+                editViewController.dismiss(animated: true)
+            }
+            
+            self.present(editViewController, animated: true)
         }
         action.backgroundColor = .systemBlue
         return UISwipeActionsConfiguration(actions: [action])   // p editar a celula

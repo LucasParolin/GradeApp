@@ -11,13 +11,13 @@ class AverageDetailsRepositoryMock {
     
     static let shared = AverageDetailsRepositoryMock()
     
-    var averages: [AvarageDetails] = []
+    var averages: [AverageDetails] = []
     
-    func getAvarageGradeDetails(completion: @escaping ([AvarageDetails]) -> ()) {
+    func getAvarageGradeDetails(completion: @escaping ([AverageDetails]) -> ()) {
         completion(averages)
     }
     
-    func addAverage(average: AvarageDetails) {
+    func addAverage(average: AverageDetails) {
         averages.append(average)
     }
 }

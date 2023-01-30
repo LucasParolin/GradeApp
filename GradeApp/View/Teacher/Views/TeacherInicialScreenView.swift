@@ -23,25 +23,19 @@ class TeacherInicialScreenView: UIView{
     
     lazy var calculateAvarageGrade: UIButton = {
         let button = UIButton()
-        button.setTitle("Calcular média de aluno", for: .normal)
-        button.setTitleColor(UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.90), for: .normal)
-        button.backgroundColor = UIColor(red: 0.18, green: 0.25, blue: 0.35, alpha: 1.00)
+        button.setTitle("Calcular média do aluno", for: .normal)
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 5
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.80).cgColor
+        button.backgroundColor = .tintColor
         return button
     }()
     
     lazy var seeAvarageStudentsGrades: UIButton = {
         let button = UIButton()
         button.setTitle("Ver as médias da turma", for: .normal)
-        button.setTitleColor(UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.90), for: .normal)
-        button.backgroundColor = UIColor(red: 0.18, green: 0.25, blue: 0.35, alpha: 1.00)
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 5
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.80).cgColor
+        button.backgroundColor = .tintColor
         return button
     }()
     

@@ -26,7 +26,7 @@ class CalculateAvarageViewController: UIViewController {
     @objc func navigateToAverageGradeDetails() {
         let averageDetailsViewController = AverageDetailsViewController()
         
-        let average = AvarageDetails(
+        let average = AverageDetails(
             student: "- " + (customView.selectStudent.text ?? ""),
             subject: "- " + (customView.selectSubject.text ?? ""), firstGrade: customView.firstStudentGradeTextField.text ?? "", secondGrade: customView.secondStudentGradeTextField.text ?? "", thirdGrade: customView.thirdStudentGradeTextField.text ?? "", fourthGrade: customView.fourthStudentGradeTextField.text ?? "",
             averageGrade: "Média de \(calculateAverage())"

@@ -82,7 +82,6 @@ class StudentFinalDetailScreenView: UIView {
         label.layer.cornerRadius = 5
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
-//        label.textAlignment = .center
         return label
     }()
     
@@ -94,7 +93,6 @@ class StudentFinalDetailScreenView: UIView {
         label.layer.cornerRadius = 5
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
-//        label.textAlignment = .center
         return label
     }()
     
@@ -106,22 +104,9 @@ class StudentFinalDetailScreenView: UIView {
         label.layer.cornerRadius = 5
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
-//        label.textAlignment = .center
         return label
     }()
-    
-    //    lazy var returnToTeacherInicialScreen: UIButton = {
-    //        let button = UIButton()
-    //        button.setTitle("Voltar para a tela inicial", for: .normal)
-    //        button.setTitleColor(UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.90), for: .normal)
-    //        button.backgroundColor = UIColor(red: 0.18, green: 0.25, blue: 0.35, alpha: 1.00)
-    //        button.layer.masksToBounds = true
-    //        button.layer.cornerRadius = 5
-    //        button.layer.borderWidth = 1
-    //        button.layer.borderColor = UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.80).cgColor
-    //        return button
-    //    }()
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubviews()
@@ -226,8 +211,3 @@ class StudentFinalDetailScreenView: UIView {
         avarageGrade.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
     }
 }
-
-
-//func getData(data:String){
-//    calculatedAvarageViewCustom.student.text?.append(contentsOf: data)
-//}
