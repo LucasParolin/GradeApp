@@ -13,12 +13,12 @@
 		FF10977329719BD000B6C81B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF10977129719BD000B6C81B /* LaunchScreen.storyboard */; };
 		FF10978129719CD500B6C81B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10978029719CD500B6C81B /* UIView+Extension.swift */; };
 		FF10978529719DC000B6C81B /* StudentInicialScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10978429719DC000B6C81B /* StudentInicialScreen.swift */; };
-		FF1097872971BB4000B6C81B /* TeacherLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1097862971BB4000B6C81B /* TeacherLoginScreen.swift */; };
+		FF1097872971BB4000B6C81B /* TeacherLoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1097862971BB4000B6C81B /* TeacherLoginScreenView.swift */; };
 		FF10978B2971BCC100B6C81B /* TeacherLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10978A2971BCC100B6C81B /* TeacherLoginViewController.swift */; };
-		FF8FC07D2981594B008E1B69 /* AverageGradeDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8FC07C2981594B008E1B69 /* AverageGradeDetailsTableViewCell.swift */; };
-		FF8FC08129815971008E1B69 /* AverageGradeDetailsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8FC08029815971008E1B69 /* AverageGradeDetailsScreenView.swift */; };
-		FF8FC08329815A24008E1B69 /* AverageGradeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8FC08229815A24008E1B69 /* AverageGradeDetailsViewController.swift */; };
-		FF8FC08529815CC7008E1B69 /* AvarageGradeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8FC08429815CC7008E1B69 /* AvarageGradeDetails.swift */; };
+		FF8FC07D2981594B008E1B69 /* AverageDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8FC07C2981594B008E1B69 /* AverageDetailsTableViewCell.swift */; };
+		FF8FC08129815971008E1B69 /* AverageDetailsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8FC08029815971008E1B69 /* AverageDetailsScreenView.swift */; };
+		FF8FC08329815A24008E1B69 /* AverageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8FC08229815A24008E1B69 /* AverageDetailsViewController.swift */; };
+		FF8FC08529815CC7008E1B69 /* AvarageDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8FC08429815CC7008E1B69 /* AvarageDetails.swift */; };
 		FF8FC08729817538008E1B69 /* AverageGradeDetailsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8FC08629817538008E1B69 /* AverageGradeDetailsRepositoryMock.swift */; };
 		FF9C44E02976DC110026EABD /* ListStudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C44DF2976DC110026EABD /* ListStudentsViewController.swift */; };
 		FFE66C23297EB42C00A56720 /* Students.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE66C22297EB42C00A56720 /* Students.swift */; };
@@ -29,18 +29,17 @@
 		FFE66C30297EF47800A56720 /* SubjectRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE66C2F297EF47800A56720 /* SubjectRepositoryMock.swift */; };
 		FFE66C32297EF62C00A56720 /* ListSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE66C31297EF62C00A56720 /* ListSubjectViewController.swift */; };
 		FFE924AD29757B2800EF16BA /* InicialScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE924AC29757B2800EF16BA /* InicialScreen.swift */; };
-		FFE924AF29757BFC00EF16BA /* InicialScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE924AE29757BFC00EF16BA /* InicialScreenController.swift */; };
+		FFE924AF29757BFC00EF16BA /* InicialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE924AE29757BFC00EF16BA /* InicialScreenViewController.swift */; };
 		FFE924B129758E3B00EF16BA /* StudentLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE924B029758E3B00EF16BA /* StudentLoginScreen.swift */; };
 		FFE924B32975B2EC00EF16BA /* StudentLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE924B22975B2EC00EF16BA /* StudentLoginController.swift */; };
-		FFE924B52975B42700EF16BA /* TeacherInicialScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE924B42975B42700EF16BA /* TeacherInicialScreen.swift */; };
-		FFE924B72975BFFE00EF16BA /* TeacherInicialScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE924B62975BFFE00EF16BA /* TeacherInicialScreenController.swift */; };
-		FFE9A21E2976CE5300FE1F64 /* CalculateAvarageGradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE9A21D2976CE5300FE1F64 /* CalculateAvarageGradeView.swift */; };
-		FFE9A2202976D18300FE1F64 /* CalculateAvarageGradeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE9A21F2976D18300FE1F64 /* CalculateAvarageGradeController.swift */; };
+		FFE924B52975B42700EF16BA /* TeacherInicialScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE924B42975B42700EF16BA /* TeacherInicialScreenView.swift */; };
+		FFE924B72975BFFE00EF16BA /* TeacherInicialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE924B62975BFFE00EF16BA /* TeacherInicialViewController.swift */; };
+		FFE9A21E2976CE5300FE1F64 /* CalculateAvarageScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE9A21D2976CE5300FE1F64 /* CalculateAvarageScreenView.swift */; };
+		FFE9A2202976D18300FE1F64 /* CalculateAvarageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE9A21F2976D18300FE1F64 /* CalculateAvarageViewController.swift */; };
 		FFEC92062982ADF300B314E4 /* StudentListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C44E12976DCFE0026EABD /* StudentListScreenView.swift */; };
-		FFEC92082982C46700B314E4 /* StudentGradesFinalDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC92072982C46700B314E4 /* StudentGradesFinalDetailsView.swift */; };
-		FFEC920A2982C6CD00B314E4 /* StudentGradesFinalDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC92092982C6CD00B314E4 /* StudentGradesFinalDetailsController.swift */; };
-		FFEC920C2982E13100B314E4 /* StudentGradesFinalDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC920B2982E13100B314E4 /* StudentGradesFinalDetails.swift */; };
-		FFEC920E298300AE00B314E4 /* StudentGradesFinalDetailsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC920D298300AE00B314E4 /* StudentGradesFinalDetailsRepositoryMock.swift */; };
+		FFEC92082982C46700B314E4 /* StudentFinalDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC92072982C46700B314E4 /* StudentFinalDetailsView.swift */; };
+		FFEC920A2982C6CD00B314E4 /* StudentFinalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC92092982C6CD00B314E4 /* StudentFinalDetailsViewController.swift */; };
+		FFEC920C2982E13100B314E4 /* StudentFinalDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC920B2982E13100B314E4 /* StudentFinalDetails.swift */; };
 		FFF0DA212978294600DC5E1A /* LoginRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF0DA202978294600DC5E1A /* LoginRepositoryMock.swift */; };
 		FFF0DA23297829A000DC5E1A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF0DA22297829A000DC5E1A /* Login.swift */; };
 		FFF0DA5F297868BB00DC5E1A /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF0DA5E297868BA00DC5E1A /* StudentTableViewCell.swift */; };
@@ -57,12 +56,12 @@
 		FF10977429719BD000B6C81B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF10978029719CD500B6C81B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		FF10978429719DC000B6C81B /* StudentInicialScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInicialScreen.swift; sourceTree = "<group>"; };
-		FF1097862971BB4000B6C81B /* TeacherLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherLoginScreen.swift; sourceTree = "<group>"; };
+		FF1097862971BB4000B6C81B /* TeacherLoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherLoginScreenView.swift; sourceTree = "<group>"; };
 		FF10978A2971BCC100B6C81B /* TeacherLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherLoginViewController.swift; sourceTree = "<group>"; };
-		FF8FC07C2981594B008E1B69 /* AverageGradeDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageGradeDetailsTableViewCell.swift; sourceTree = "<group>"; };
-		FF8FC08029815971008E1B69 /* AverageGradeDetailsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageGradeDetailsScreenView.swift; sourceTree = "<group>"; };
-		FF8FC08229815A24008E1B69 /* AverageGradeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageGradeDetailsViewController.swift; sourceTree = "<group>"; };
-		FF8FC08429815CC7008E1B69 /* AvarageGradeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvarageGradeDetails.swift; sourceTree = "<group>"; };
+		FF8FC07C2981594B008E1B69 /* AverageDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		FF8FC08029815971008E1B69 /* AverageDetailsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageDetailsScreenView.swift; sourceTree = "<group>"; };
+		FF8FC08229815A24008E1B69 /* AverageDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageDetailsViewController.swift; sourceTree = "<group>"; };
+		FF8FC08429815CC7008E1B69 /* AvarageDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvarageDetails.swift; sourceTree = "<group>"; };
 		FF8FC08629817538008E1B69 /* AverageGradeDetailsRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageGradeDetailsRepositoryMock.swift; sourceTree = "<group>"; };
 		FF9C44DF2976DC110026EABD /* ListStudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStudentsViewController.swift; sourceTree = "<group>"; };
 		FF9C44E12976DCFE0026EABD /* StudentListScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListScreenView.swift; sourceTree = "<group>"; };
@@ -74,17 +73,16 @@
 		FFE66C2F297EF47800A56720 /* SubjectRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectRepositoryMock.swift; sourceTree = "<group>"; };
 		FFE66C31297EF62C00A56720 /* ListSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSubjectViewController.swift; sourceTree = "<group>"; };
 		FFE924AC29757B2800EF16BA /* InicialScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicialScreen.swift; sourceTree = "<group>"; };
-		FFE924AE29757BFC00EF16BA /* InicialScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicialScreenController.swift; sourceTree = "<group>"; };
+		FFE924AE29757BFC00EF16BA /* InicialScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicialScreenViewController.swift; sourceTree = "<group>"; };
 		FFE924B029758E3B00EF16BA /* StudentLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLoginScreen.swift; sourceTree = "<group>"; };
 		FFE924B22975B2EC00EF16BA /* StudentLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLoginController.swift; sourceTree = "<group>"; };
-		FFE924B42975B42700EF16BA /* TeacherInicialScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherInicialScreen.swift; sourceTree = "<group>"; };
-		FFE924B62975BFFE00EF16BA /* TeacherInicialScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherInicialScreenController.swift; sourceTree = "<group>"; };
-		FFE9A21D2976CE5300FE1F64 /* CalculateAvarageGradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateAvarageGradeView.swift; sourceTree = "<group>"; };
-		FFE9A21F2976D18300FE1F64 /* CalculateAvarageGradeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateAvarageGradeController.swift; sourceTree = "<group>"; };
-		FFEC92072982C46700B314E4 /* StudentGradesFinalDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentGradesFinalDetailsView.swift; sourceTree = "<group>"; };
-		FFEC92092982C6CD00B314E4 /* StudentGradesFinalDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentGradesFinalDetailsController.swift; sourceTree = "<group>"; };
-		FFEC920B2982E13100B314E4 /* StudentGradesFinalDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentGradesFinalDetails.swift; sourceTree = "<group>"; };
-		FFEC920D298300AE00B314E4 /* StudentGradesFinalDetailsRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentGradesFinalDetailsRepositoryMock.swift; sourceTree = "<group>"; };
+		FFE924B42975B42700EF16BA /* TeacherInicialScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherInicialScreenView.swift; sourceTree = "<group>"; };
+		FFE924B62975BFFE00EF16BA /* TeacherInicialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherInicialViewController.swift; sourceTree = "<group>"; };
+		FFE9A21D2976CE5300FE1F64 /* CalculateAvarageScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateAvarageScreenView.swift; sourceTree = "<group>"; };
+		FFE9A21F2976D18300FE1F64 /* CalculateAvarageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateAvarageViewController.swift; sourceTree = "<group>"; };
+		FFEC92072982C46700B314E4 /* StudentFinalDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFinalDetailsView.swift; sourceTree = "<group>"; };
+		FFEC92092982C6CD00B314E4 /* StudentFinalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFinalDetailsViewController.swift; sourceTree = "<group>"; };
+		FFEC920B2982E13100B314E4 /* StudentFinalDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFinalDetails.swift; sourceTree = "<group>"; };
 		FFF0DA202978294600DC5E1A /* LoginRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryMock.swift; sourceTree = "<group>"; };
 		FFF0DA22297829A000DC5E1A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		FFF0DA5E297868BA00DC5E1A /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
@@ -122,16 +120,11 @@
 		FF10976529719BCE00B6C81B /* GradeApp */ = {
 			isa = PBXGroup;
 			children = (
+				FF2A3CC7298804CC00066CF2 /* View */,
 				FF10978329719CEC00B6C81B /* ViewModels */,
 				FF10978229719CE600B6C81B /* Models */,
-				FF10977F29719CC000B6C81B /* Extensions */,
-				FF10977E29719CA100B6C81B /* Storyboard */,
 				FF10977D29719C9700B6C81B /* Delegates */,
 				FF10977C29719C7500B6C81B /* Resources */,
-				FFF0DA60297868E500DC5E1A /* Base */,
-				FFE9A2192976CB0B00FE1F64 /* InicialScreen */,
-				FFE9A2182976CACE00FE1F64 /* Teacher */,
-				FFE9A21C2976CBA400FE1F64 /* Student */,
 				FF10977429719BD000B6C81B /* Info.plist */,
 			);
 			path = GradeApp;
@@ -158,12 +151,13 @@
 		FF10977C29719C7500B6C81B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FF10977E29719CA100B6C81B /* Storyboard */,
+				FF10977F29719CC000B6C81B /* Extensions */,
 				FF10976F29719BD000B6C81B /* Assets.xcassets */,
 				FFF0DA202978294600DC5E1A /* LoginRepositoryMock.swift */,
 				FFE66C24297EC67700A56720 /* StudentsRepositoryMock.swift */,
 				FFE66C2F297EF47800A56720 /* SubjectRepositoryMock.swift */,
 				FF8FC08629817538008E1B69 /* AverageGradeDetailsRepositoryMock.swift */,
-				FFEC920D298300AE00B314E4 /* StudentGradesFinalDetailsRepositoryMock.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -198,8 +192,8 @@
 				FFF0DA22297829A000DC5E1A /* Login.swift */,
 				FFE66C22297EB42C00A56720 /* Students.swift */,
 				FFE66C2D297EF3F500A56720 /* Subject.swift */,
-				FF8FC08429815CC7008E1B69 /* AvarageGradeDetails.swift */,
-				FFEC920B2982E13100B314E4 /* StudentGradesFinalDetails.swift */,
+				FF8FC08429815CC7008E1B69 /* AvarageDetails.swift */,
+				FFEC920B2982E13100B314E4 /* StudentFinalDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,15 +205,34 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		FFE66C28297EF34B00A56720 /* TableView */ = {
+		FF2A3CC7298804CC00066CF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFF0DA60297868E500DC5E1A /* Base */,
+				FFE9A2192976CB0B00FE1F64 /* InicialScreen */,
+				FFE9A2182976CACE00FE1F64 /* Teacher */,
+				FFE9A21C2976CBA400FE1F64 /* Student */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF2A3CC82988052500066CF2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				FFF0DA5E297868BA00DC5E1A /* StudentTableViewCell.swift */,
-				FF9C44E12976DCFE0026EABD /* StudentListScreenView.swift */,
 				FFE66C29297EF3C700A56720 /* SubjectTableViewCell.swift */,
+				FF8FC07C2981594B008E1B69 /* AverageDetailsTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FFE66C28297EF34B00A56720 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				FF2A3CC82988052500066CF2 /* Cell */,
+				FF9C44E12976DCFE0026EABD /* StudentListScreenView.swift */,
 				FFE66C26297EF2E800A56720 /* SubjectListScreenView.swift */,
-				FF8FC07C2981594B008E1B69 /* AverageGradeDetailsTableViewCell.swift */,
-				FF8FC08029815971008E1B69 /* AverageGradeDetailsScreenView.swift */,
+				FF8FC08029815971008E1B69 /* AverageDetailsScreenView.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -236,7 +249,7 @@
 		FFE9A2192976CB0B00FE1F64 /* InicialScreen */ = {
 			isa = PBXGroup;
 			children = (
-				FFE924AE29757BFC00EF16BA /* InicialScreenController.swift */,
+				FFE924AE29757BFC00EF16BA /* InicialScreenViewController.swift */,
 				FFE924AC29757B2800EF16BA /* InicialScreen.swift */,
 			);
 			path = InicialScreen;
@@ -245,10 +258,10 @@
 		FFE9A21A2976CB3A00FE1F64 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FF1097862971BB4000B6C81B /* TeacherLoginScreen.swift */,
-				FFE924B42975B42700EF16BA /* TeacherInicialScreen.swift */,
-				FFE9A21D2976CE5300FE1F64 /* CalculateAvarageGradeView.swift */,
-				FFEC92072982C46700B314E4 /* StudentGradesFinalDetailsView.swift */,
+				FF1097862971BB4000B6C81B /* TeacherLoginScreenView.swift */,
+				FFE924B42975B42700EF16BA /* TeacherInicialScreenView.swift */,
+				FFE9A21D2976CE5300FE1F64 /* CalculateAvarageScreenView.swift */,
+				FFEC92072982C46700B314E4 /* StudentFinalDetailsView.swift */,
 				FFE66C28297EF34B00A56720 /* TableView */,
 			);
 			path = Views;
@@ -258,12 +271,12 @@
 			isa = PBXGroup;
 			children = (
 				FF10978A2971BCC100B6C81B /* TeacherLoginViewController.swift */,
-				FFE924B62975BFFE00EF16BA /* TeacherInicialScreenController.swift */,
+				FFE924B62975BFFE00EF16BA /* TeacherInicialViewController.swift */,
 				FF9C44DF2976DC110026EABD /* ListStudentsViewController.swift */,
 				FFE66C31297EF62C00A56720 /* ListSubjectViewController.swift */,
-				FFE9A21F2976D18300FE1F64 /* CalculateAvarageGradeController.swift */,
-				FF8FC08229815A24008E1B69 /* AverageGradeDetailsViewController.swift */,
-				FFEC92092982C6CD00B314E4 /* StudentGradesFinalDetailsController.swift */,
+				FFE9A21F2976D18300FE1F64 /* CalculateAvarageViewController.swift */,
+				FF8FC08229815A24008E1B69 /* AverageDetailsViewController.swift */,
+				FFEC92092982C6CD00B314E4 /* StudentFinalDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -361,37 +374,36 @@
 				FF10978129719CD500B6C81B /* UIView+Extension.swift in Sources */,
 				FFF0DA64297868E500DC5E1A /* BaseCell.swift in Sources */,
 				FFE924AD29757B2800EF16BA /* InicialScreen.swift in Sources */,
-				FFE9A21E2976CE5300FE1F64 /* CalculateAvarageGradeView.swift in Sources */,
-				FF8FC08129815971008E1B69 /* AverageGradeDetailsScreenView.swift in Sources */,
+				FFE9A21E2976CE5300FE1F64 /* CalculateAvarageScreenView.swift in Sources */,
+				FF8FC08129815971008E1B69 /* AverageDetailsScreenView.swift in Sources */,
 				FFE66C32297EF62C00A56720 /* ListSubjectViewController.swift in Sources */,
 				FFE66C27297EF2E800A56720 /* SubjectListScreenView.swift in Sources */,
 				FFE924B32975B2EC00EF16BA /* StudentLoginController.swift in Sources */,
 				FF10976B29719BCE00B6C81B /* StudentInicialScreenController.swift in Sources */,
-				FFEC92082982C46700B314E4 /* StudentGradesFinalDetailsView.swift in Sources */,
+				FFEC92082982C46700B314E4 /* StudentFinalDetailsView.swift in Sources */,
 				FF8FC08729817538008E1B69 /* AverageGradeDetailsRepositoryMock.swift in Sources */,
-				FF8FC08529815CC7008E1B69 /* AvarageGradeDetails.swift in Sources */,
+				FF8FC08529815CC7008E1B69 /* AvarageDetails.swift in Sources */,
 				FFF0DA63297868E500DC5E1A /* BaseView.swift in Sources */,
 				FFE66C2A297EF3C700A56720 /* SubjectTableViewCell.swift in Sources */,
-				FFE924B52975B42700EF16BA /* TeacherInicialScreen.swift in Sources */,
+				FFE924B52975B42700EF16BA /* TeacherInicialScreenView.swift in Sources */,
 				FF10976729719BCE00B6C81B /* AppDelegate.swift in Sources */,
-				FFEC920A2982C6CD00B314E4 /* StudentGradesFinalDetailsController.swift in Sources */,
+				FFEC920A2982C6CD00B314E4 /* StudentFinalDetailsViewController.swift in Sources */,
 				FFF0DA212978294600DC5E1A /* LoginRepositoryMock.swift in Sources */,
 				FFE66C2E297EF3F500A56720 /* Subject.swift in Sources */,
 				FF9C44E02976DC110026EABD /* ListStudentsViewController.swift in Sources */,
-				FF8FC07D2981594B008E1B69 /* AverageGradeDetailsTableViewCell.swift in Sources */,
-				FFEC920C2982E13100B314E4 /* StudentGradesFinalDetails.swift in Sources */,
-				FFE9A2202976D18300FE1F64 /* CalculateAvarageGradeController.swift in Sources */,
-				FFE924AF29757BFC00EF16BA /* InicialScreenController.swift in Sources */,
-				FF8FC08329815A24008E1B69 /* AverageGradeDetailsViewController.swift in Sources */,
+				FF8FC07D2981594B008E1B69 /* AverageDetailsTableViewCell.swift in Sources */,
+				FFEC920C2982E13100B314E4 /* StudentFinalDetails.swift in Sources */,
+				FFE9A2202976D18300FE1F64 /* CalculateAvarageViewController.swift in Sources */,
+				FFE924AF29757BFC00EF16BA /* InicialScreenViewController.swift in Sources */,
+				FF8FC08329815A24008E1B69 /* AverageDetailsViewController.swift in Sources */,
 				FFE66C25297EC67700A56720 /* StudentsRepositoryMock.swift in Sources */,
-				FFE924B72975BFFE00EF16BA /* TeacherInicialScreenController.swift in Sources */,
+				FFE924B72975BFFE00EF16BA /* TeacherInicialViewController.swift in Sources */,
 				FFF0DA5F297868BB00DC5E1A /* StudentTableViewCell.swift in Sources */,
 				FFE924B129758E3B00EF16BA /* StudentLoginScreen.swift in Sources */,
-				FFEC920E298300AE00B314E4 /* StudentGradesFinalDetailsRepositoryMock.swift in Sources */,
 				FFF0DA23297829A000DC5E1A /* Login.swift in Sources */,
 				FFE66C23297EB42C00A56720 /* Students.swift in Sources */,
 				FF10978529719DC000B6C81B /* StudentInicialScreen.swift in Sources */,
-				FF1097872971BB4000B6C81B /* TeacherLoginScreen.swift in Sources */,
+				FF1097872971BB4000B6C81B /* TeacherLoginScreenView.swift in Sources */,
 				FFE66C30297EF47800A56720 /* SubjectRepositoryMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

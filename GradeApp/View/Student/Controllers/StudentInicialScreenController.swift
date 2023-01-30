@@ -21,7 +21,7 @@ class StudentInicialScreenController: UIViewController {
     }
     
     @objc func navigateToSeeAverageGrades(){
-        let averageGradeDetailsViewControllerCustom = AverageGradeDetailsViewController()
+        let averageGradeDetailsViewControllerCustom = AverageDetailsViewController()
         averageGradeDetailsViewControllerCustom.isUser()
         present(averageGradeDetailsViewControllerCustom, animated: true)
     }

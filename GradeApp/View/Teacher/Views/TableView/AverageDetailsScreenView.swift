@@ -7,13 +7,13 @@
 
 import UIKit
 
-class AverageGradeDetailsScreenView: UIView {
+class AverageDetailsScreenView: UIView {
     
     let cellId = "cellId"
     
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: bounds)
-        tableView.register(AverageGradeDetailsTableViewCell.self, forCellReuseIdentifier: cellId)
+        tableView.register(AverageDetailsTableViewCell.self, forCellReuseIdentifier: cellId)
         return tableView
     }()
     

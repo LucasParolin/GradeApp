@@ -7,10 +7,10 @@
 
 import UIKit
 
-class InicialScreenController: UIViewController {
+class InicialScreenViewController: UIViewController {
     
     let inicialScreenCustom = InicialScreen()
-    let teacherLoginScreenCustom = TeacherLoginScreen()
+    let teacherLoginScreenCustom = TeacherLoginScreenView()
     
     override func loadView() {
         view = inicialScreenCustom

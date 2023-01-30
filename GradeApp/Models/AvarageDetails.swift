@@ -1,13 +1,13 @@
 //
-//  StudentGradesFinalDetails.swift
+//  AvarageGradeDetails.swift
 //  GradeApp
 //
-//  Created by Lucas Parolin on 26/01/23.
+//  Created by Lucas Parolin on 25/01/23.
 //
 
 import UIKit
 
-struct StudentGradesFinalDetails {
+struct AvarageDetails {
     var student: String?
     var subject: String?
     var firstGrade: String?

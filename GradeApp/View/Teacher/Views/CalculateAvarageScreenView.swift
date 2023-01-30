@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CalculateAvarageGradeView:UIView {
+class CalculateAvarageScreenView: UIView {
     
     lazy var background: UIView = {
         let background = UIView()

@@ -1,36 +1,41 @@
 //
-//  StudentLoginController.swift
+//  LoginViewController.swift
 //  GradeApp
 //
-//  Created by Lucas Parolin on 16/01/23.
+//  Created by Lucas Parolin on 13/01/23.
 //
 
 import UIKit
 
-class StudentLoginController: UIViewController {
+class TeacherLoginViewController: UITableViewController {
     
-    let studentLoginScreenCustom = StudentLoginScreen()
-    let inicialScreenCustom = StudentInicialScreen()
+    let customView = TeacherLoginScreenView()
     private var loginViewModel = LoginRepositoryMock.shared
-
+    
+    var loginInstance: Login?
+    
     override func loadView() {
-        view = studentLoginScreenCustom
+        view = customView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        studentLoginScreenCustom.loginButton.addTarget(self, action: #selector(getLogin), for: .touchUpInside)
+        customView.loginButton.addTarget(self, action: #selector(getLogin), for: .touchUpInside)
         
+    }
+    
+    func receiveLogin(data: Login) {
+        loginInstance = data
     }
     
     @objc func getLogin(){
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1){
             self.loginViewModel.getLogin { [weak self] login in
                 
-                if self?.studentLoginScreenCustom.userTextField.text == login.user
-                    && self?.studentLoginScreenCustom.passwordTextField.text == login.password {
+                if self?.customView.userTextField.text == login.user
+                    && self?.customView.passwordTextField.text == login.password {
                     
-                    self?.navigateToStudentInicialScreen()
+                    self?.navigateToInicialScreen()
                 }else {
                     
                     let alertController = UIAlertController(title: "Erro", message: "Usuário ou senha incorretos", preferredStyle: .alert)
@@ -44,12 +49,8 @@ class StudentLoginController: UIViewController {
         }
     }
     
-    @objc func navigateToStudentInicialScreen() {
-        
-        let seeMyGradesControllerCustom = StudentInicialScreenController()
-        self.navigationController?.pushViewController(seeMyGradesControllerCustom, animated: true)
-        
+    @objc func navigateToInicialScreen() {
+        let teacherInicialScreenCustom = TeacherInicialViewController()
+        self.navigationController?.pushViewController(teacherInicialScreenCustom, animated: true)
     }
 }
-
-

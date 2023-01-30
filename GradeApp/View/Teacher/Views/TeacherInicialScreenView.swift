@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TeacherInicialScreen: UIView{
+class TeacherInicialScreenView: UIView{
     
     lazy var background: UIView = {
         let background = UIView()

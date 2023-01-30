@@ -7,17 +7,17 @@
 
 import Foundation
 
-class AverageGradeDetailsRepositoryMock {
+class AverageDetailsRepositoryMock {
     
-    static let shared = AverageGradeDetailsRepositoryMock()
+    static let shared = AverageDetailsRepositoryMock()
     
-    var averages: [AvarageGradeDetails] = []
+    var averages: [AvarageDetails] = []
     
-    func getAvarageGradeDetails(completion: @escaping ([AvarageGradeDetails]) -> ()) {
+    func getAvarageGradeDetails(completion: @escaping ([AvarageDetails]) -> ()) {
         completion(averages)
     }
     
-    func addAverage(average: AvarageGradeDetails) {
+    func addAverage(average: AvarageDetails) {
         averages.append(average)
     }
 }

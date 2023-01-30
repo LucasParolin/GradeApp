@@ -8,13 +8,17 @@
 import UIKit
 
 class ListStudentsViewController: UIViewController {
-    var getStudent: (Students) -> Void = {_ in}
     
-    var students: [Students] = []
+    // Alias -> Apelido
     typealias CustomView = StudentListScreenView
-    var customView = CustomView()
     
+    // Variables
+    var customView = CustomView()
     var student: Students?
+    var students: [Students] = []
+    
+    // Action Variables
+    var getStudent: (Students) -> Void = {_ in}
     
     override func loadView() {
         view = customView
@@ -34,6 +38,7 @@ class ListStudentsViewController: UIViewController {
         }
     }
 }
+
 extension ListStudentsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,10 +53,6 @@ extension ListStudentsViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.item)
-        print(indexPath.row)
-        print(indexPath.section)
-        
         getStudent(students[indexPath.item])
     }
 }

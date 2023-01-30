@@ -7,8 +7,8 @@
 
 import UIKit
 
-class StudentGradesFinalDetailsView: UIView {
-    
+class StudentFinalDetailScreenView: UIView {
+
     lazy var background: UIView = {
         let background = UIView()
         background.backgroundColor = UIColor(red: 0.42, green: 0.51, blue: 0.62, alpha: 1.00)

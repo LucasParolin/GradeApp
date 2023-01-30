@@ -8,11 +8,16 @@
 import UIKit
 
 class ListSubjectViewController: UIViewController {
-    var getSubject: (Subject) -> Void = {_ in}
     
-    var subject: [Subject] = []
+    // Alias -> Apelido
     typealias CustomView = SubjectListScreenView
+    
+    // Variables
+    var subject: [Subject] = []
     var customView = CustomView()
+    
+    // Action Variables
+    var getSubject: (Subject) -> Void = {_ in}
     
     override func loadView() {
         view = customView
