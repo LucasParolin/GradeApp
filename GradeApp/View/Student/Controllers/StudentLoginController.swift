@@ -9,16 +9,16 @@ import UIKit
 
 class StudentLoginController: UIViewController {
     
-    let studentLoginScreenCustom = StudentLoginScreen()
+    let customView = TeacherLoginScreenView()
     private var loginViewModel = LoginRepositoryMock.shared
     
     override func loadView() {
-        view = studentLoginScreenCustom
+        view = customView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        studentLoginScreenCustom.loginButton.addTarget(self, action: #selector(getLogin), for: .touchUpInside)
+        customView.loginButton.addTarget(self, action: #selector(getLogin), for: .touchUpInside)
         
     }
     
@@ -26,8 +26,8 @@ class StudentLoginController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1){
             self.loginViewModel.getLogin { [weak self] login in
                 
-                if self?.studentLoginScreenCustom.userTextField.text == login.user
-                    && self?.studentLoginScreenCustom.passwordTextField.text == login.password {
+                if self?.customView.userTextField.text == login.user
+                    && self?.customView.passwordTextField.text == login.password {
                     
                     self?.navigateToStudentInicialScreen()
                 }else {

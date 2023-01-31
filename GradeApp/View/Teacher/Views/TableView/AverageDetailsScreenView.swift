@@ -28,12 +28,9 @@ class AverageDetailsScreenView: UIView {
     lazy var calculateAgain: UIButton = {
         let button = UIButton()
         button.setTitle("Calcular outra média", for: .normal)
-        button.setTitleColor(.black, for: .normal)
-        button.backgroundColor = .white
+        button.backgroundColor = .tintColor
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 5
-        button.layer.borderWidth = 2
-//        button.layer.borderColor = UIColor(red: 0.93, green: 0.93, blue: 0.91, alpha: 0.80).cgColor
         return button
     }()
     
@@ -76,7 +73,7 @@ class AverageDetailsScreenView: UIView {
             bottom: tableView.bottomAnchor,
             trailing: nil,
             padding: .init(top: 0, left: 0, bottom: 10, right: 0),
-            size: .init(width: 200, height: 60))
+            size: .init(width: 200, height: 40))
         calculateAgain.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
 
     }

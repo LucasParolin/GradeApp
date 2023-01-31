@@ -11,7 +11,7 @@ class StudentFinalDetailScreenView: UIView {
 
     lazy var background: UIView = {
         let background = UIView()
-        background.backgroundColor = UIColor(red: 0.42, green: 0.51, blue: 0.62, alpha: 1.00)
+        background.backgroundColor = .white
         return background
     }()
     
@@ -20,20 +20,20 @@ class StudentFinalDetailScreenView: UIView {
         view.backgroundColor = .white
         view.layer.cornerRadius = 20
         view.layer.masksToBounds = true
-        view.layer.borderWidth = 2
+        view.layer.borderWidth = 1
         return view
     }()
     
     lazy var student: UILabel = {
         let label = UILabel()
         label.text = "Estudante (substituir)"
-        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.font = UIFont.systemFont(ofSize: 20)
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
         label.textAlignment = .center
         label.layer.masksToBounds = true
         label.layer.cornerRadius = 5
-        label.layer.borderWidth = 2
+        label.layer.borderWidth = 1
         label.backgroundColor = .white
         return label
     }()
@@ -41,7 +41,7 @@ class StudentFinalDetailScreenView: UIView {
     lazy var subject: UILabel = {
         let label = UILabel()
         label.text = "Matéria (substituir)"
-        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.font = UIFont.systemFont(ofSize: 20)
         label.layer.masksToBounds = true
         label.layer.cornerRadius = 5
         label.numberOfLines = 0
@@ -53,7 +53,7 @@ class StudentFinalDetailScreenView: UIView {
     lazy var firstGrade: UILabel = {
         let label = UILabel()
         label.text = "Primeira nota (substituir)"
-        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.font = UIFont.systemFont(ofSize: 20)
         label.layer.masksToBounds = true
         label.layer.cornerRadius = 5
         label.numberOfLines = 0
@@ -65,7 +65,7 @@ class StudentFinalDetailScreenView: UIView {
     lazy var secondGrade: UILabel = {
         let label = UILabel()
         label.text = "Segunda nota (substituir)"
-        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.font = UIFont.systemFont(ofSize: 20)
         label.layer.masksToBounds = true
         label.layer.cornerRadius = 5
         label.numberOfLines = 0
@@ -77,7 +77,7 @@ class StudentFinalDetailScreenView: UIView {
     lazy var thirdGrade: UILabel = {
         let label = UILabel()
         label.text = "Terceira nota (substituir)"
-        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.font = UIFont.systemFont(ofSize: 20)
         label.layer.masksToBounds = true
         label.layer.cornerRadius = 5
         label.numberOfLines = 0
@@ -88,7 +88,7 @@ class StudentFinalDetailScreenView: UIView {
     lazy var fourthGrade: UILabel = {
         let label = UILabel()
         label.text = "Quarta nota (substituir)"
-        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.font = UIFont.systemFont(ofSize: 20)
         label.layer.masksToBounds = true
         label.layer.cornerRadius = 5
         label.numberOfLines = 0
@@ -99,7 +99,7 @@ class StudentFinalDetailScreenView: UIView {
     lazy var avarageGrade: UILabel = {
         let label = UILabel()
         label.text = "Média (substituir)"
-        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.font = UIFont.systemFont(ofSize: 20)
         label.layer.masksToBounds = true
         label.layer.cornerRadius = 5
         label.numberOfLines = 0

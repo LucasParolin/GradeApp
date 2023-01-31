@@ -31,6 +31,7 @@ class TeacherLoginScreenView: UIView {
     lazy var passwordTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Insira sua senha"
+        textField.isSecureTextEntry = true
         textField.borderStyle = .roundedRect
         return textField
     }()

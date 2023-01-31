@@ -157,7 +157,7 @@ class CalculateAvarageScreenView: UIView {
             bottom: nil,
             trailing: selectStudent.trailingAnchor,
             padding: .init(top: 40, left: 30, bottom: 0, right: 30),
-            size: .init(width: 0, height: 0))
+            size: .init(width: 0, height: 40))
         calculateAvarageStudentsGrades.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         
     }

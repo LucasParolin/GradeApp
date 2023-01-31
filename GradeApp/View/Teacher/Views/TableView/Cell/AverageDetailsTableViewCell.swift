@@ -21,21 +21,21 @@ class AverageDetailsTableViewCell: BaseCell {
         let view = UIView()
         view.layer.cornerRadius = 5
         view.layer.masksToBounds = true
-        view.layer.borderWidth = 2
+        view.layer.borderWidth = 1
         return view
     }()
     
     lazy var lblName: UILabel = {
         let label = UILabel()
         label.text = "Nada com nada"
-        label.font = UIFont.boldSystemFont(ofSize: 18)
+        label.font = UIFont.systemFont(ofSize: 18)
         return label
     }()
     
     lazy var lblSubject: UILabel = {
         let label = UILabel()
         label.text = "Nada com nada"
-        label.font = UIFont.boldSystemFont(ofSize: 18)
+        label.font = UIFont.systemFont(ofSize: 18)
         return label
     }()
     
@@ -43,7 +43,7 @@ class AverageDetailsTableViewCell: BaseCell {
         let label = UILabel()
         label.text = "Nada com nada"
         label.textAlignment = .center
-        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.font = UIFont.systemFont(ofSize: 20)
         return label
     }()
 
