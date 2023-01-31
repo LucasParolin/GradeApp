@@ -8,6 +8,18 @@
 import UIKit
 
 class StudentFinalDetailScreenView: UIView {
+    
+    var studentData: AverageDetails? {
+        didSet {
+            student.text = studentData?.student
+            subject.text = studentData?.subject
+            firstGrade.text = studentData?.firstGrade
+            secondGrade.text = studentData?.secondGrade
+            thirdGrade.text = studentData?.thirdGrade
+            fourthGrade.text = studentData?.fourthGrade
+            avarageGrade.text = studentData?.averageGrade
+        }
+    }
 
     lazy var background: UIView = {
         let background = UIView()

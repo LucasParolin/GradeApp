@@ -19,13 +19,7 @@ class StudentFinalDetailsController: UIViewController {
         super.viewDidLoad()
     }
     
-    func getData(name: String, firstGrade: String, secondGrade: String, thirdGrade: String, fourthGrade: String, subject: String, average: Float) {
-        customView.student.text = name
-        customView.subject.text = subject
-        customView.firstGrade.text = firstGrade
-        customView.secondGrade.text = secondGrade
-        customView.thirdGrade.text = thirdGrade
-        customView.fourthGrade.text = fourthGrade
-        customView.avarageGrade.text = "Média do aluno: \(average)"
+    func getData(data: AverageDetails) {
+        customView.studentData = data
     }
 }

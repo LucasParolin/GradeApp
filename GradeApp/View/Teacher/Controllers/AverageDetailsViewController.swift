@@ -78,7 +78,7 @@ extension AverageDetailsViewController: UITableViewDelegate, UITableViewDataSour
         let average = avarageGradeDetails[indexPath.item]
         
         
-        studentFinalDetailsController.getData(name: average.student ?? "", firstGrade: average.firstGrade ?? "", secondGrade: average.secondGrade ?? "", thirdGrade: average.thirdGrade ?? "", fourthGrade: average.fourthGrade ?? "", subject: average.subject ?? "", average: Float(average.averageGrade ?? "") ?? 0.0)
+        studentFinalDetailsController.getData(data: average)
         
         present(studentFinalDetailsController, animated: true)
         getAvarageGradeDetails(avarageGradeDetails[indexPath.item])
